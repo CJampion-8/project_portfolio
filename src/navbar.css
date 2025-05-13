@@ -1,0 +1,32 @@
+/* Background */
+.navBar {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: .9rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* Link style */
+.nav-link-custom {
+  color: white !important;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glowing effect */
+.nav-link-custom:hover,
+.nav-link-custom:focus,
+.nav-link-custom:active {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  color: white !important;
+}
