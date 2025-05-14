@@ -1,32 +1,64 @@
-/* Background */
 .navBar {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: .9rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.25) 25%,
+    rgba(0, 0, 0, 0.25) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 0.9rem;
   display: flex;
   justify-content: center;
-  border-radius: 1rem;
+  width: 85%;
+  margin: 0 auto;
 }
 
-/* Nav links container */
-.nav-links {
+.nav-wrapper {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.nav-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
   align-items: center;
   gap: 5rem;
+  flex-wrap: nowrap;
 }
 
-/* Link style */
+.nav-title-custom {
+  color: white;
+  font-size: 1.3rem;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
 .nav-link-custom {
-  color: white !important;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   font-size: 1.3rem;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+  display: inline-block;
 }
 
-/* Glowing effect */
 .nav-link-custom:hover,
 .nav-link-custom:focus,
 .nav-link-custom:active {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
-  color: white !important;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+               0 0 5px rgba(255, 255, 255, 0.5);
+  color: white;
 }

@@ -1,6 +1,46 @@
-.navbar {
-    font-family: "Cal Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Font weight ranges from 100-900 */
+
+.navBar, body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 250;
     font-style: normal;
+    font-variation-settings: 
+        "wdth" 100;
+}
+
+.nav-title {
+    font-weight: 750;
+}
+
+body {
+    font-weight: 150;
+    font-size: larger;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+/* body {
+  background: linear-gradient(300deg,#000000,#007aed,#0404ff);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+html, body, #root, .App, .gradient-background {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }

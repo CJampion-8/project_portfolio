@@ -4,9 +4,11 @@ import NavBar from './Navbar';
 
 function App() {
     return (
-        <div className="App">
-            <NavBar />
-            <p>Hello World!</p>
+        <div className="gradient-background">
+            <div className="App">
+                <NavBar />
+                <p>Hello World!</p>
+            </div>
         </div>
     )
 }
