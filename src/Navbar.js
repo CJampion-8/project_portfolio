@@ -5,18 +5,16 @@ function NavBar() {
   return (
     <div className="navBar">
       <div className="nav-wrapper">
-        <div className="nav-title">
-          <a href="#home" className="nav-title-custom">CJ CYPERT</a>
-        </div>
+        <p className="nav-name">Conrad Cypert</p>
         <div className="nav-links">
-          <a href="#home" className="nav-link-custom">TO-DO LIST</a>
-          <a href="#features" className="nav-link-custom">BMI CALCULATOR</a>
-          <a href="#pricing" className="nav-link-custom">WEATHER DASHBOARD</a>
-          <a href="#pricing" className="nav-link-custom">DISCORD BOT</a>
+          <a href="https://github.com/CJampion-8" target="_blank" className="nav-link-custom">GitHub</a>
+          <a href="#about" className="nav-link-custom">About</a>
+          <a href="#pricing" className="nav-link-custom">Contact</a>
         </div>
       </div>
     </div>
   );
 }
+
 
 export default NavBar;

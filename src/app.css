@@ -1,46 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/* Font weight ranges from 100-900 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Font weight ranges from 100-900 */
 
-.navBar, body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 250;
-    font-style: normal;
-    font-variation-settings: 
-        "wdth" 100;
-}
 
-.nav-title {
-    font-weight: 750;
+html, body, #root {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    font-family: "Roboto", sans-serif;
     font-weight: 150;
+    font-style: normal;
     font-size: larger;
-    background-color: rgb(30, 30, 30);
     color: white;
+
+    background: #1E1E1E;
+    background: linear-gradient(60deg, rgba(30, 30, 30, 1) 0%, rgba(40, 40, 40, 1) 50%, rgba(30, 30, 30, 1) 100%);
 }
 
-/* body {
-  background: linear-gradient(300deg,#000000,#007aed,#0404ff);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+.container-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
 
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .25);
 
-html, body, #root, .App, .gradient-background {
-  height: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+    display: inline-block;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.project-image {
+    width: 15rem;
+    height: auto;
+    border-radius: .2rem;
+}
+
+.project-title {   
+    text-transform: uppercase;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.project-title:hover {
+        transition: all 0.3s ease-in-out;
+        color: rgb(113, 180, 255);
+}
+
+.project-description {
+    
 }

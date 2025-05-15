@@ -1,64 +1,49 @@
 .navBar {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0.25) 75%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  padding: 0.9rem;
-  display: flex;
-  justify-content: center;
-  width: 85%;
-  margin: 0 auto;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 0.25) 25%,
+        rgba(0, 0, 0, 0.25) 75%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .nav-wrapper {
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-title {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.nav-name {
+    padding: 0 10rem;
+    font-size: larger;
+    font-weight: 500;
+    color: white; /* Optional: ensure it's visible on dark background */
 }
 
 .nav-links {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-  flex-wrap: nowrap;
-}
-
-.nav-title-custom {
-  color: white;
-  font-size: 1.3rem;
-  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  text-decoration: none;
-  white-space: nowrap;
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-weight: 500;
 }
 
 .nav-link-custom {
-  color: white;
-  text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  font-size: 1.3rem;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  white-space: nowrap;
-  display: inline-block;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    display: inline-block;
 }
 
-.nav-link-custom:hover,
-.nav-link-custom:focus,
-.nav-link-custom:active {
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
-               0 0 5px rgba(255, 255, 255, 0.5);
-  color: white;
+.nav-link-custom:hover {
+    color: rgb(113, 180, 255);
 }
