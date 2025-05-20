@@ -9,6 +9,17 @@ function App() {
         <>
             <NavBar />
             <div className="container-wrapper">
+                <div className="about">
+                    <div className="about-title">
+                        <p>About Me</p>
+                    </div>
+                    <p className="about-content">
+                        <hr/>
+                            I'm a front-end developer with a background in Cyber Security and IT. I build responsive, user-friendly 
+                            websites using React, HTML, and CSS. I'm passionate about clean design, smooth user experiences, and I 
+                            am always looking to learn through experience. I'm open to freelance projects or full-time opportunities.
+                    </p>
+                </div>
                 <div className="container">
                     <div className="project-list">
                         {projects.map((project) => (

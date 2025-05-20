@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Font weight ranges from 100-900 */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body, #root {
     min-height: 100vh;
@@ -10,34 +9,62 @@ html, body, #root {
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 150;
+    font-weight: 300;
     font-style: normal;
     font-size: larger;
     color: white;
-
-    background: #1E1E1E;
     background: linear-gradient(60deg, rgba(30, 30, 30, 1) 0%, rgba(40, 40, 40, 1) 50%, rgba(30, 30, 30, 1) 100%);
+}
+
+.text-glow {
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
 }
 
 .container-wrapper {
     flex: 1;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 1rem;
+    gap: 1rem;
+    animation: fadeIn 1s ease-in;
 }
 
-.container {
+.container,
+.about {
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, .25);
-
+    background-color: rgba(0, 0, 0, 0.25);
     color: white;
     text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-    display: inline-block;
+    padding: 1rem;
+}
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.about-content hr {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+
+.about-content {
+    text-align: center;
+    max-width: 85%;
+    margin-top: 0;
 }
 
 .project-card {
@@ -50,16 +77,18 @@ body {
 .project-image {
     width: 20rem;
     height: 15rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
 }
 
-.project-title {   
+.project-title,
+.about-title {   
     text-transform: uppercase;
     color: white;
-    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.5rem;
     text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
 }
 
 .project-title:hover,
@@ -70,11 +99,11 @@ body {
 
 .project-tools {
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: 0.9rem;
     color: rgb(165, 165, 165);
     text-decoration: none;
     white-space: nowrap;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 }
 
 .project-tools a {
@@ -85,4 +114,22 @@ body {
 
 .project-info {
     flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
 }
