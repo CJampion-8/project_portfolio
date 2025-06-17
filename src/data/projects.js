@@ -2,7 +2,7 @@ const projects = [
     {
         title: "To-Do List",
         tools: [
-            "React",
+            "JavaScript",
             "CSS"
         ],
         image: require("../images/temp.png"),
