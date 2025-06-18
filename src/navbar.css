@@ -11,28 +11,34 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1rem 0;
 }
 
 .nav-wrapper {
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .nav-name {
-    padding: 0 15rem;
+    padding: 0 2rem;
     font-size: larger;
     font-weight: 500;
     color: white; /* Optional: ensure it's visible on dark background */
 }
 
 .nav-links {
-    padding: 0 15rem;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     font-weight: 500;
 }
 
@@ -47,4 +53,83 @@
 
 .nav-link-custom:hover {
     color: rgb(113, 180, 255);
+}
+
+/* Responsive Design */
+/* Large screens */
+@media screen and (min-width: 1200px) {
+    .nav-name {
+        padding: 0 4rem;
+        font-size: 1.4rem;
+    }
+    
+    .nav-links {
+        padding: 0 4rem;
+        gap: 3rem;
+    }
+    
+    .nav-link-custom {
+        font-size: 1.4rem;
+    }
+}
+
+/* Medium screens */
+@media screen and (max-width: 768px) {
+    .nav-name {
+        padding: 0 1rem;
+        font-size: 1.1rem;
+    }
+    
+    .nav-links {
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+    
+    .nav-link-custom {
+        font-size: 1.1rem;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+    .navBar {
+        padding: 0.5rem 0;
+    }
+    
+    .nav-name {
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .nav-links {
+        padding: 0 0.5rem;
+        gap: 1rem;
+    }
+    
+    .nav-link-custom {
+        font-size: 1rem;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 320px) {
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+    
+    .nav-name {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    
+    .nav-links {
+        padding: 0;
+        gap: 0.8rem;
+    }
+    
+    .nav-link-custom {
+        font-size: 0.9rem;
+    }
 }
