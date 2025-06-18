@@ -7,7 +7,7 @@ const projects = [
         ],
         image: require("../images/temp.png"),
         description: "A to-do list application that allows users to add, edit, mark as complete and delete tasks. Users can also add their name to be personally greeted upon opening the app.",
-        link: ""
+        link: "https://github.com/CJampion-8/to-do_list"
         
     },
     {
