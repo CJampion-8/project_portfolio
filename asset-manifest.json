@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/project_portfolio/static/css/main.f5692a67.css",
-    "main.js": "/project_portfolio/static/js/main.58586817.js",
+    "main.css": "/project_portfolio/static/css/main.23e9c6c4.css",
+    "main.js": "/project_portfolio/static/js/main.b209d646.js",
+    "static/media/bmi_calculator_preview.png": "/project_portfolio/static/media/bmi_calculator_preview.a973970b7d5f89701e1b.png",
+    "static/media/to-do_list_preview.png": "/project_portfolio/static/media/to-do_list_preview.1f09fb7b89c288930fde.png",
+    "static/media/github_logo.png": "/project_portfolio/static/media/github_logo.8200c0248a73f82f213f.png",
+    "static/media/weather_dashboard_preview.png": "/project_portfolio/static/media/weather_dashboard_preview.2378ae8fc928ed4766ac.png",
     "index.html": "/project_portfolio/index.html",
-    "main.f5692a67.css.map": "/project_portfolio/static/css/main.f5692a67.css.map",
-    "main.58586817.js.map": "/project_portfolio/static/js/main.58586817.js.map"
+    "main.23e9c6c4.css.map": "/project_portfolio/static/css/main.23e9c6c4.css.map",
+    "main.b209d646.js.map": "/project_portfolio/static/js/main.b209d646.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5692a67.css",
-    "static/js/main.58586817.js"
+    "static/css/main.23e9c6c4.css",
+    "static/js/main.b209d646.js"
   ]
 }
