@@ -1,7 +1,8 @@
 {
-  "name": "web-portfolio",
+  "name": "project_portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cjampion-8.github.io/project_portfolio",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -43,6 +44,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://cjampion-8.github.io/project_portfolio"
+  }
 }
