@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project_portfolio/static/css/main.9f132691.css",
-    "main.js": "/project_portfolio/static/js/main.5f2d85ab.js",
+    "main.js": "/project_portfolio/static/js/main.06635918.js",
     "static/media/bmi_calculator_preview.png": "/project_portfolio/static/media/bmi_calculator_preview.a973970b7d5f89701e1b.png",
     "static/media/to-do_list_preview.png": "/project_portfolio/static/media/to-do_list_preview.1f09fb7b89c288930fde.png",
     "static/media/temp.png": "/project_portfolio/static/media/temp.be0c1dcaad830efdf695.png",
@@ -9,10 +9,10 @@
     "static/media/weather_dashboard_preview.png": "/project_portfolio/static/media/weather_dashboard_preview.2378ae8fc928ed4766ac.png",
     "index.html": "/project_portfolio/index.html",
     "main.9f132691.css.map": "/project_portfolio/static/css/main.9f132691.css.map",
-    "main.5f2d85ab.js.map": "/project_portfolio/static/js/main.5f2d85ab.js.map"
+    "main.06635918.js.map": "/project_portfolio/static/js/main.06635918.js.map"
   },
   "entrypoints": [
     "static/css/main.9f132691.css",
-    "static/js/main.5f2d85ab.js"
+    "static/js/main.06635918.js"
   ]
 }
